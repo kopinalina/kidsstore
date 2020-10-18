@@ -1,36 +1,44 @@
 body {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
+
 header {
-    background-color: #f5f5f5;
-    padding: 0px 10px;
+	background-color: #f5f5f5;
+	padding: 0px 10px;
 }
+
 @media screen and (max-width: 769px) {
-    .container{
-        flex-wrap: wrap-reverse;
-    }
+	.container {
+		flex-wrap: wrap-reverse;
+	}
 }
+
 .burger-menu svg {
-    height: 30px;
+	height: 30px;
 }
+
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 130px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 130px;
 }
+
 .container-name {
-    font-size: 45px;
-    font-weight: 900;
+	font-size: 45px;
+	font-weight: 900;
 }
+
 .container-info {
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
+
 .social {
-     display: flex;
+	display: flex;
 }
-.social svg{
-    height: 40px;
+
+.social svg {
+	height: 40px;
 }
