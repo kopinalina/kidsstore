@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Store</title>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"></head>
 <body>
     <header>
-        <div class="container">
-            <div class="burger-menu">
+        <div class="container"> 
+        <div class="row align-items-center">
+            <div class="burger-menu col-2">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><g><rect y="3" width="50" height="2"/><rect y="17" width="50" height="2"/><rect y="31" width="50" height="2"/><rect y="45" width="50" height="2"/></g></svg>
             </div>    
             <div class="navigation" style="display: none;">
@@ -22,7 +23,7 @@
                     <li>Контакти</li>
                 </ul>
             </div>
-            <div class="container-logo">
+            <div class="container-logo col text-center">
                 <div class="container-name">
                 Kids Store 
                 </div>
@@ -30,7 +31,7 @@
                 з турботою для дітей
                 </div>
             </div>
-            <div class="social">
+            <div class="social col-2">
                 <div class="facebook">
                     <a href="https://facebook.com">
                         <svg class="si5f7ee8e60dfb890021f6694fsocialIcons1602152684309 svgIcon_1J7" viewBox="0 0 32 32"><path class="logo_2gS" d="M13.6383 25H16.9133V16.0044H19.3702L19.8561 13.1936H16.9133V11.1568C16.9133 10.5002 17.3379 9.8108 17.9447 9.8108H19.6171V7H17.5674V7.0126C14.3604 7.129 13.7014 8.9864 13.6443 10.9374H13.6383V13.1936H12V16.0044H13.6383V25Z"></path></svg>
@@ -48,22 +49,53 @@
                 </div>
             </div>
         </div>
+        </div>
     </header>
     <main>
-        <section class="banner">
-            <img src="images/banner.jpg" alt="kids">
-			<h2>Стильний дитячий одяг</h2>
-            <p> Ласкаво просимо!
-                Ми щиро бажаємо, щоб шлях кожного малюка в цьому світі починався з теплих обіймів і турботи люблячих батьків, а вибір одягу - одна з можливостей подарувати своїм малюкам не тільки комфорт і здоров'я, а й яскраві, радісні емоції. Ми з радістю допоможемо Вам регулярно поповнювати гардероб Вашої дитини найкращими дитячими речами, економлячи при цьому Ваш бюджет!</p>
+        <section class="banner container text-center">
+            <div class="row justify-content-center">
+            <div class="image">
+                <img class="img-fluid" src="images/banner.jpg" alt="kids">
+            </div>
+            </div>
+            <div class="row justify-content-center">
+			    <p class="info">Стильний дитячий одяг</p>
+            </div>
+            <div class="row justify-content-center">
+             <div class="col-8"> 
+                    <p class="container-info"> Ласкаво просимо!</p>
+                    <p class="container-info">Ми щиро бажаємо, щоб шлях кожного малюка в цьому світі починався з теплих обіймів і турботи люблячих батьків, а вибір одягу - одна з можливостей подарувати своїм малюкам не тільки комфорт і здоров'я, а й яскраві, радісні емоції. Ми з радістю допоможемо Вам регулярно поповнювати гардероб Вашої дитини найкращими дитячими речами, економлячи при цьому Ваш бюджет!</p>
+             </div>
+            </div>
         </section>
         <section>
-            <div class="timer-contairner">
-                <img src="images/clothes.jpg" alt="clothes" class="clothes-banner">
-                <div class="banner-text">Шалені знижки на літній одяг</div> 
-                <div class="day">Дні</div>
-                <div class="hour">Години</div>
-                <div class="minute">Хвилини</div>
-            </div>
+            <div class="timer-container">
+                <div class="image">
+                    <img class="img-fluid" src="images/clothes.jpg" alt="clothes" class="clothes-banner">
+                    <div class="banner-text">Шалені знижки на літній одяг</div> 
+                </div>
+				<div class="container text-center">
+					<div class="row justify-content-center">
+						<div class="col-1">
+                            <div class="day number">0</div>
+							<div class="day text">Дні</div>
+						</div>
+						<div class="col-1">
+                            <div class="hour number">0</div>
+							<div class="hour text">Години</div>
+						</div>
+						<div class="col-1">
+                            <div class="minute number">0</div>
+							<div class="minute text">Хвилини</div>
+						</div>
+						<div class="col-1">
+                            <div class="second number">0</div>
+							<div class="second text">Секунди</div>
+						</div>
+					</div>
+				</div>
+				
+				</div>
             <div class="catalog-button">
                 <button>ПЕРЕЙТИ ДО КАТАЛОГУ</button>
             </div>
@@ -105,6 +137,6 @@
 
         </section>
         </main>
-
+<script src="js/index.js"></script>
 </body>
 </html>

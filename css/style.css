@@ -1,6 +1,6 @@
-body {
+ html {
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -9,19 +9,16 @@ header {
 }
 
 @media screen and (max-width: 769px) {
-	.container {
+	/* .container {
 		flex-wrap: wrap-reverse;
-	}
+	} */
 }
 
 .burger-menu svg {
 	height: 30px;
 }
 
-.container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+header .container .row{
 	min-height: 130px;
 }
 
@@ -41,4 +38,46 @@ header {
 
 .social svg {
 	height: 40px;
+}
+
+.banner div.image, .timer-container div.image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.banner img, .timer-container img {
+    height: auto;
+    width: 100%;
+}
+.timer-container div.image {
+    height: 200px;
+      position: relative;
+  text-align: center;
+}
+.timer-container img{
+    filter: blur(2px) brightness(120%);
+
+}
+.banner .info {
+	font-size: 40px;
+	font-weight: bold;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.timer-container .number {
+    font-size: 40px;
+    font-weight: bold;
+}
+.timer-container .text {
+    font-weight: bold;
+    color: grey;
 }
