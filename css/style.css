@@ -40,14 +40,14 @@ header .container .row{
 	height: 40px;
 }
 
-.banner div.image, .timer-container div.image {
+.banner div.image, .timer-container div.image, .categories .image{
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
 }
-.banner img, .timer-container img {
+.banner img, .timer-container img  .categories .image img{
     height: auto;
     width: 100%;
 }
@@ -80,4 +80,20 @@ header .container .row{
 .timer-container .text {
     font-weight: bold;
     color: grey;
+}
+.categories {
+    margin-top: 50px;
+}
+.title {
+	font-size: 40px;
+	font-weight: bold;
+}
+.presentation-text{
+    font-size: 20px;
+	font-weight: bold;
+}
+.categories .image {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 300px;
 }
