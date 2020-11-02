@@ -3,7 +3,7 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-header {
+header, footer{
 	background-color: #f5f5f5;
 	padding: 0px 10px;
 }
@@ -16,6 +16,25 @@ header {
 
 .burger-menu svg {
 	height: 30px;
+}
+
+div.navigation {
+  position: relative;
+  display: inline-block;
+}
+
+div.navigation ul {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+div.burger-menu:hover ul {
+  display: block;
 }
 
 header .container .row{
@@ -47,7 +66,7 @@ header .container .row{
     align-items: center;
     height: 400px;
 }
-.banner img, .timer-container img  .categories .image img{
+.banner img, .timer-container img {
     height: auto;
     width: 100%;
 }
@@ -95,5 +114,9 @@ header .container .row{
 .categories .image {
     margin-left: 10px;
     margin-right: 10px;
-    max-height: 300px;
+    flex-wrap: wrap;
+}
+.categories .image img {
+    height: auto;
+    width: 100%;
 }
