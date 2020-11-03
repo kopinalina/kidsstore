@@ -64,6 +64,7 @@ header .container .row{
 .container-info {
 	font-size: 20px;
 	font-weight: bold;
+    color:#5e5d5a
 }
 
 .social {
@@ -91,8 +92,7 @@ header .container .row{
   text-align: center;
 }
 .timer-container img{
-    filter: blur(2px) brightness(120%);
-
+    filter: blur(2px) opacity(70%);
 }
 .banner .info {
 	font-size: 40px;
@@ -104,8 +104,8 @@ header .container .row{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
-  font-weight: bold;
-}
+  font-weight: bold;  
+  }
 
 .timer-container .number {
     font-size: 40px;
@@ -125,6 +125,7 @@ header .container .row{
 .presentation-text{
     font-size: 20px;
 	font-weight: bold;
+    color: grey;
 }
 .categories .image {
     margin-left: 10px;
